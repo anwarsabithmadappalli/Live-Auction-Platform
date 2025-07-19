@@ -23,7 +23,7 @@ const message = ref('');
 
 onMounted(() => {
   fetchAuctions();
-    window.Echo.private('message-channel')
+    window.Echo.channel('message-channel')
     .listen('.new-message', (e) => {
       message.value = e.message;
       fetchAuctions();
