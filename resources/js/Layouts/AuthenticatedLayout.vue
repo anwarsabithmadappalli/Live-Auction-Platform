@@ -12,7 +12,7 @@ const showingNavigationDropdown = ref(false);
 const message = ref('');
 
 onMounted(() => {
-    window.Echo.private('message-channel')
+    window.Echo.channel('message-channel')
   .listen('.new-message', (e) => {
     console.log('Received messageddd:', e);
     message.value = e.message;
