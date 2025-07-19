@@ -75,4 +75,4 @@
 
 ## Points to Note
 
-- Please ensure that the correct Pusher credentials are set in the .env file.
+- Please ensure that the correct Pusher credentials are set in the .env file before the composer install performs.
